@@ -7,6 +7,8 @@
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
 
+set nu "added by zqzas
+
 let g:pathogen_disabled = []
 if !has('gui_running')
    call add(g:pathogen_disabled, 'powerline')
