@@ -9,7 +9,7 @@
 
 set nu "added by zqzas
 set lines=999
-set columns=150
+set columns=160
 
 let g:pathogen_disabled = []
 if !has('gui_running')
