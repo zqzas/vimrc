@@ -16,7 +16,7 @@ if !has('gui_running')
    call add(g:pathogen_disabled, 'powerline')
 endif
 
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 " General Settings
@@ -54,7 +54,7 @@ else
 "  colors vgod
 endif
 
-set clipboard=unnamed	" yank to the system register (*) by default
+set clipboard=unnamedplus	" yank to the system register (*) by default
 set showmatch		" Cursor shows matching ) and }
 set showmode		" Show current mode
 set wildchar=<TAB>	" start wild expansion in the command line using <TAB>
@@ -340,3 +340,5 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 
 " --- vim-gitgutter
 let g:gitgutter_enabled = 1
+
+set rtp+=~/.fzf
